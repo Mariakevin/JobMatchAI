@@ -18,7 +18,7 @@
   Evaluate explicit academic eligibility, audit skill evidence, align practical constraints, and inspect listing warnings — with transparent rationales, never an opaque percentage.
 </p>
 
-[**Quickstart**](#-quickstart) · [**Why JobMatch AI?**](#-why-jobmatch-ai) · [**Architecture**](#-architecture--workflow) · [**Scoring**](#-explainable-fit-scoring-model) · [**Tests**](#-automated-testing--scenario-matrix) · [**API**](#-api-reference) · [**Design**](#-design-system)
+[**Quickstart**](#-quickstart) · [**Why JobMatch AI?**](#-why-jobmatch-ai) · [**Architecture**](#-architecture--workflow) · [**Scoring**](#-explainable-fit-scoring-model) · [**Tests**](#-automated-testing--scenario-matrix) · [**API**](#-api-reference) · [**Design**](#-design-system) · [**Documentation**](docs/index.md)
 
 </div>
 
@@ -288,9 +288,13 @@ Contributions are welcome. Please:
 
 ---
 
+## 📚 Documentation
+
+The detailed project documentation is maintained in [`docs/`](docs/index.md). Start with the [documentation index](docs/index.md), or open the [project overview](docs/project-overview.md), [getting started guide](docs/getting-started.md), [user guide](docs/user-guide.md), [architecture](docs/architecture.md), [decision model](docs/decision-model.md), [API reference](docs/api-reference.md), [testing and security notes](docs/testing-security.md), and [development guide](docs/development.md).
+
 ## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+No LICENSE file is currently present in this repository. The project's reuse and redistribution terms are therefore not specified in the repository; do not assume that it is MIT-licensed.
 
 <div align="center">
 <sub>Built with care for students navigating their early career opportunities.</sub>
