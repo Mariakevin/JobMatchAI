@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎓 InternMatch AI
+# 🎓 JobMatch AI
 
 ### Intelligent Internship Matching & Evidence-Backed Eligibility Assistant
 
@@ -18,7 +18,7 @@
   Evaluate explicit academic eligibility, audit skill evidence, align practical constraints, and inspect listing warnings — with transparent rationales, never an opaque percentage.
 </p>
 
-[**Quickstart**](#-quickstart) · [**Why InternMatch AI?**](#-why-internmatch-ai) · [**Architecture**](#-architecture--workflow) · [**Scoring**](#-explainable-fit-scoring-model) · [**Tests**](#-automated-testing--scenario-matrix) · [**API**](#-api-reference) · [**Design**](#-design-system)
+[**Quickstart**](#-quickstart) · [**Why JobMatch AI?**](#-why-jobmatch-ai) · [**Architecture**](#-architecture--workflow) · [**Scoring**](#-explainable-fit-scoring-model) · [**Tests**](#-automated-testing--scenario-matrix) · [**API**](#-api-reference) · [**Design**](#-design-system)
 
 </div>
 
@@ -26,15 +26,15 @@
 
 > [!NOTE]
 > **Product Positioning & Philosophy**  
-> InternMatch AI helps students decide which internships are genuinely worth pursuing and what they should clarify or improve before applying. It does **not** predict selection probability, guarantee an interview, verify an employer's legal status, or make hiring decisions. It is designed to empower students with auditable evidence and total control over their data.
+> JobMatch AI helps students decide which internships are genuinely worth pursuing and what they should clarify or improve before applying. It does **not** predict selection probability, guarantee an interview, verify an employer's legal status, or make hiring decisions. It is designed to empower students with auditable evidence and total control over their data.
 
 ---
 
-## 💡 Why InternMatch AI?
+## 💡 Why JobMatch AI?
 
-Traditional ATS tools and resume matchers treat candidates as a bag of keywords and produce opaque, uninterpretable percentages. InternMatch AI redesigns this from the **student's perspective**:
+Traditional ATS tools and resume matchers treat candidates as a bag of keywords and produce opaque, uninterpretable percentages. JobMatch AI redesigns this from the **student's perspective**:
 
-| Dimension | Generic ATS / Keyword Scrapers | InternMatch AI (Student-Side Assistant) |
+| Dimension | Generic ATS / Keyword Scrapers | JobMatch AI (Student-Side Assistant) |
 |---|---|---|
 | **Academic Eligibility** | Conflates skill similarity with hard eligibility conditions. | **Independent Deterministic Engine:** Evaluates degrees, semesters, GPA thresholds, and graduation windows under strict boolean `AND`/`OR` logic. |
 | **Missing Keywords** | Assumes absence of keyword = student lacks the skill. | **Evidence Provenance:** Distinguishes `DEMONSTRATED`, `SELF_REPORTED`, `NOT_FOUND_IN_RESUME`, and `CONFIRMED_GAP`. |
@@ -53,7 +53,7 @@ The frontend uses an **"Instrument"** design system: warm paper `#F8F7F3`, ink t
 
 ## 🔄 Architecture & Workflow
 
-InternMatch AI follows a hybrid architecture: document parsing and heuristic entity extraction produce structured constraints, while **deterministic application code** evaluates eligibility rules and calculates fit scores.
+JobMatch AI follows a hybrid architecture: document parsing and heuristic entity extraction produce structured constraints, while **deterministic application code** evaluates eligibility rules and calculates fit scores.
 
 ```mermaid
 flowchart TD
@@ -145,8 +145,8 @@ $$\text{Profile Fit Score} = \text{round}\left( \frac{\sum_{i \in \text{Evaluabl
 ### 1. Clone & Set Up the Backend
 
 ```bash
-git clone https://github.com/Mariakevin/InternMatchAI.git
-cd InternMatchAI
+git clone https://github.com/Mariakevin/JobMatchAI.git
+cd JobMatchAI
 
 python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
@@ -241,7 +241,7 @@ OK (72/72 tests passing)
 ## 📁 Repository Structure
 
 ```
-InternMatchAI/
+JobMatchAI/
 ├── api/                  # FastAPI backend (parsing, eligibility, scoring, risks)
 ├── src/                  # React frontend
 │   ├── App.tsx           # Page composition + hook wiring

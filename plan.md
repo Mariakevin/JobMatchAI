@@ -1,4 +1,4 @@
-## InternMatch AI – Intelligent Internship Matching and Eligibility Assistant
+## JobMatch AI – Intelligent Internship Matching and Eligibility Assistant
 
 **Description:** Upload a resume and internship descriptions to identify suitable internships, evaluate eligibility, and assess skill compatibility.
 

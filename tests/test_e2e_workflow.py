@@ -34,7 +34,7 @@ class EndToEndWorkflowTests(unittest.TestCase):
             "Technical Skills\n"
             "Python, React, TypeScript, SQL, Docker, FastAPI\n"
             "Projects\n"
-            "InternMatch Assistant: Developed full-stack web application using React, FastAPI, and Docker\n"
+            "JobMatch Assistant: Developed full-stack web application using React, FastAPI, and Docker\n"
             "Data Analytics Dashboard: Built visualization tool in Python using pandas\n"
             "Experience\n"
             "Software Intern at OpenSource Labs: Implemented REST APIs and wrote SQL queries for PostgreSQL"

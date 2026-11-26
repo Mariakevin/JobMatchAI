@@ -1,6 +1,6 @@
-# InternMatch AI — Implementation Task for the Coding Agent
+# JobMatch AI — Implementation Task for the Coding Agent
 
-**Project:** InternMatch AI — Intelligent Internship Matching and Eligibility Assistant  
+**Project:** JobMatch AI — Intelligent Internship Matching and Eligibility Assistant
 **Task type:** Product enhancement / core MVP implementation  
 **Research checked:** 14 November 2026  
 **Primary objective:** Turn a student's resume and a collection of internship descriptions into a transparent, evidence-backed assessment of eligibility, fit, missing skills, practical constraints, and potential listing risks.
@@ -9,7 +9,7 @@
 
 ## 1. Mission
 
-Build InternMatch AI as a **student-side internship decision-support tool**. A student should be able to upload a resume, review the information extracted from it, add one or more internship descriptions, and understand:
+Build JobMatch AI as a **student-side internship decision-support tool**. A student should be able to upload a resume, review the information extracted from it, add one or more internship descriptions, and understand:
 
 1. Whether they appear to meet each explicit eligibility condition.
 2. Which skills and experiences in their profile support the internship requirements.
@@ -22,7 +22,7 @@ The product must explain **why** it produced a result. Do not build a black-box 
 
 ### Product positioning
 
-> InternMatch AI helps students decide which internships are worth pursuing and what they should clarify or improve before applying. It does not predict selection, guarantee an interview, verify an employer, or make hiring decisions.
+> JobMatch AI helps students decide which internships are worth pursuing and what they should clarify or improve before applying. It does not predict selection, guarantee an interview, verify an employer, or make hiring decisions.
 
 This is an analysis tool for internships supplied by the user. It is not an internship marketplace in this task.
 
@@ -34,16 +34,16 @@ The following findings are based on publicly documented product features reviewe
 
 ### 2.1 What existing products already do
 
-| Product | Publicly documented capabilities | Product implication for InternMatch AI |
+| Product | Publicly documented capabilities | Product implication for JobMatch AI |
 |---|---|---|
 | LinkedIn | Job-match insights compare a member's profile/resume with required and preferred qualifications and provide a match summary. LinkedIn also offers natural-language job search and recommendations. | Basic profile-to-description matching and match summaries are not differentiators. Go deeper into internship-specific eligibility rules and evidence. |
 | Handshake | AI-supported job discovery and personalized ranking; an optional job assistant can compare a student's profile/resume with a job and suggest profile improvements. | A conversational assistant and generic recommendations are not enough. Make every assessment auditable and student-controlled. |
 | Simplify | Job-specific keyword match, missing-keyword feedback, resume content/format checks, job tracking, and application assistance. Its documentation explicitly says its scores are feedback, not an employer ATS score or an interview prediction. | Do not present a percentage as an acceptance probability. Show the underlying criteria, evidence, uncertainty, and limitations. |
-| AICTE National Internship Portal | The portal publicly describes an AI matcher using branch, year, city, and skills; it also describes a common student profile, application tracking, stipend information, and verified postings. | Basic internship matching on branch/year/location/skills is already claimed by an Indian national portal. InternMatch AI should focus on deep analysis of documents the student supplies, not claim to replace the portal or offer equivalent listing verification. |
+| AICTE National Internship Portal | The portal publicly describes an AI matcher using branch, year, city, and skills; it also describes a common student profile, application tracking, stipend information, and verified postings. | Basic internship matching on branch/year/location/skills is already claimed by an Indian national portal. JobMatch AI should focus on deep analysis of documents the student supplies, not claim to replace the portal or offer equivalent listing verification. |
 
 ### 2.2 Gaps worth addressing
 
-Implement the following as product opportunities. Phrase them as InternMatch AI's strengths, not as universal claims that competitors never support them.
+Implement the following as product opportunities. Phrase them as JobMatch AI's strengths, not as universal claims that competitors never support them.
 
 1. **Eligibility is not the same as skill similarity.** A candidate can have strong technical skills but fail a formal condition such as degree, discipline, semester, graduation window, or minimum marks. Conversely, a resume may not mention a condition at all. Keep hard eligibility separate from skill-fit scoring.
 2. **Internship eligibility can be conditional and multi-part.** A posting can specify course level, year/semester completed, marks thresholds, enrolment status, result-declaration windows, or alternative qualifying paths. Extract these into explicit rules, preserving `AND` / `OR` logic and the original wording.

@@ -1,4 +1,4 @@
-# InternMatch AI — Design Research: Visual Direction, Tokens, and Component Patterns
+# JobMatch AI — Design Research: Visual Direction, Tokens, and Component Patterns
 
 **Date:** 2026-11-14 · **Scope:** student-side internship eligibility & fit analysis (React 18 + TS + Vite, plain CSS, lucide-react)
 **Stack constraint honoured:** zero new runtime dependencies; fonts via Google Fonts `<link>` only; native `<dialog>` instead of a modal library.

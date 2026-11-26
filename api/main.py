@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 MAX_TEXT_LENGTH = 60_000
 
 app = FastAPI(
-    title="InternMatch AI API",
+    title="JobMatch AI API",
     version="0.2.0",
     description="Student-side internship decision-support and eligibility assistant.",
 )

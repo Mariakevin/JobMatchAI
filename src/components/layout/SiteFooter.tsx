@@ -4,11 +4,11 @@ export function SiteFooter() {
       <div className="shell site-footer__inner">
         <div className="site-footer__brand">
           <span className="brand__mark brand__mark--small" aria-hidden="true">
-            IM
+            JM
           </span>
           <div>
             <p className="site-footer__name">
-              internmatch<span className="brand__period">.</span>ai
+              jobmatch<span className="brand__period">.</span>ai
             </p>
             <p className="site-footer__line">
               Deterministic by design. Your resume stays in memory.
